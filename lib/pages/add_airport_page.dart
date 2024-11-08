@@ -61,6 +61,9 @@ class _AddAirportPageState extends State<AddAirportPage> {
           child: SingleChildScrollView(
             child: Container(
               padding: const EdgeInsets.all(15),
+              constraints: const BoxConstraints(
+                maxWidth: 600,
+              ),
               child: Column(
                 children: [
                   listTitleText('Airport Details'),

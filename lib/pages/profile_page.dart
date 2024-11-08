@@ -42,6 +42,9 @@ class _ProfilePageState extends State<ProfilePage> {
           child: Container(
             width: double.infinity,
             padding: const EdgeInsets.all(15),
+            constraints: const BoxConstraints(
+              maxWidth: 600,
+            ),
             child: Column(
               children: [
                 const SizedBox(height: 30),

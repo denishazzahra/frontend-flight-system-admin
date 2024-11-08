@@ -90,6 +90,9 @@ class _EditFlightPageState extends State<EditFlightPage> {
           child: SingleChildScrollView(
             child: Container(
               padding: const EdgeInsets.all(15),
+              constraints: const BoxConstraints(
+                maxWidth: 600,
+              ),
               child: Column(
                 children: [
                   listTitleText('Flight Details'),
@@ -320,6 +323,9 @@ class _EditFlightPageState extends State<EditFlightPage> {
             decoration: BoxDecoration(
               color: whiteColor,
               borderRadius: BorderRadius.circular(5),
+            ),
+            constraints: const BoxConstraints(
+              maxWidth: 600,
             ),
             padding: const EdgeInsets.all(16),
             child: Column(

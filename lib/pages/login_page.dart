@@ -30,6 +30,9 @@ class _LoginPageState extends State<LoginPage> {
         body: Center(
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 15),
+            constraints: const BoxConstraints(
+              maxWidth: 600,
+            ),
             child: SingleChildScrollView(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
